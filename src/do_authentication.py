@@ -1,9 +1,11 @@
-import json
-import requests
-import sys
 import datetime
+import json
+import sys
 
-def authenticate(username, password, authen_base_url):
+import requests
+
+
+def authenticate(username:str , password: str, authen_base_url: str):
     authen_headers = {'Content-Type': 'application/json',
                       'Accept': 'application/json'}
 

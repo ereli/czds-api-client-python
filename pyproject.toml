@@ -1,6 +1,6 @@
 # pyproject.toml file for a project called czds-apli-client writtein in python
 [project]
-name = "czds-api-client"
+name = "czds_api_client"
 version = "0.1.0"
 authors = [
   { name="Dongmei Cao", email="dongmei.cao@icann.org" },
@@ -37,7 +37,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.black]
-line-length = 88
+line-length = 100
 target-version = ['py37', 'py38', 'py39', 'py310']
 include = '\.pyi?$'
 extend-exclude = '''
@@ -50,4 +50,6 @@ extend-exclude = '''
 
 [tool.isort]
 profile = "black"
-src_paths = [".", "tests"]
+line_length = 100
+src_paths = ["src", "tests"]
+extend_skip = [".md", ".json"]

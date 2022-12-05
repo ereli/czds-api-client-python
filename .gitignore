@@ -9,3 +9,6 @@ zonefiles/
 zonefiles/**
 
 __*
+
+.vscode/
+*.egg-info/**

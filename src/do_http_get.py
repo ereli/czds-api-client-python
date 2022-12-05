@@ -1,6 +1,7 @@
 import requests
 
-def do_get(url, access_token):
+
+def do_get(url: str, access_token: str):
 
     bearer_headers = {'Content-Type': 'application/json',
                       'Accept': 'application/json',

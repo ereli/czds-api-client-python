@@ -27,10 +27,6 @@ dependencies = [
 "Homepage" = "https://github.com/icann/czds-api-client-python"
 "Bug Tracker" = "https://github.com/icann/czds-api-client-python/issues"
 
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [tool.black]
 line-length = 100
 target-version = ['py37', 'py38', 'py39', 'py310']
